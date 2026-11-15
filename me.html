@@ -1,0 +1,560 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Raheema ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3, #a18cd1);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 35px 25px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.17);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 2;
+    animation: appear 1.5s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: clamp(30px, 7vw, 48px);
+    margin-bottom: 15px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px white;
+    }
+    to {
+        text-shadow: 0 0 25px #ffe066,
+                     0 0 40px #fff;
+    }
+}
+
+.subtitle {
+    font-size: 19px;
+    margin-bottom: 15px;
+    color: #fff5d7;
+}
+
+.cake {
+    font-size: 95px;
+    margin: 20px 0;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.name {
+    font-size: 38px;
+    font-weight: bold;
+    color: #fff2a8;
+    margin: 15px 0;
+    text-shadow: 0 0 15px #ffb6d5;
+}
+
+.message {
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 20px 0;
+}
+
+.divider {
+    width: 70%;
+    height: 2px;
+    background: rgba(255,255,255,0.6);
+    margin: 25px auto;
+}
+
+.love-story {
+    margin: 25px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.story-card {
+    background: rgba(255,255,255,0.17);
+    padding: 20px 10px;
+    border-radius: 18px;
+}
+
+.story-card .emoji {
+    font-size: 35px;
+}
+
+.story-card h3 {
+    margin: 10px 0;
+    color: #fff2a8;
+}
+
+.story-card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+button {
+    border: none;
+    padding: 15px 25px;
+    margin: 10px 5px;
+    border-radius: 30px;
+    background: white;
+    color: #ff4f81;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.07);
+    background: #ffe066;
+}
+
+.letter {
+    display: none;
+    background: rgba(255,255,255,0.17);
+    padding: 22px;
+    border-radius: 18px;
+    margin-top: 25px;
+    text-align: left;
+    line-height: 1.9;
+    animation: appear 1s ease;
+}
+
+.letter h2 {
+    text-align: center;
+    margin-bottom: 18px;
+    color: #fff2a8;
+}
+
+.letter.show {
+    display: block;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 15px;
+    color: #fff5df;
+}
+
+/* Confetti */
+
+.confetti {
+    position: fixed;
+    top: -20px;
+    width: 10px;
+    height: 15px;
+    z-index: 10;
+    pointer-events: none;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* Floating hearts */
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 23px;
+    pointer-events: none;
+    animation: floatUp 7s linear forwards;
+    z-index: 1;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media(max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        padding: 28px 17px;
+        margin: 20px auto;
+    }
+
+    .cake {
+        font-size: 75px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .message {
+        font-size: 15px;
+    }
+
+    .love-story {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    button {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
+
+@media(prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎉 Happy Birthday 🎉</h1>
+
+    <p class="subtitle">
+        To the most beautiful person in my world
+    </p>
+
+    <div class="cake">🎂</div>
+
+    <div class="name">My Dear Raheema ❤️</div>
+
+    <p class="message">
+        Today is not just another day.
+        Today is the birthday of the girl who
+        made my life more beautiful.
+
+        <br><br>
+
+        My love, I wish I could be beside you
+        right now, holding your hands,
+        hugging you and celebrating your
+        special day.
+        
+        <br><br>
+
+        Even though I'm far away,
+        my heart is always with you.
+        Distance can never separate our love.
+        ❤️
+    </p>
+
+    <div class="divider"></div>
+
+    <h2>Our Beautiful Journey 💕</h2>
+
+    <div class="love-story">
+
+        <div class="story-card">
+            <div class="emoji">❤️</div>
+            <h3>4 Years</h3>
+            <p>
+                Four years of love,
+                memories, happiness
+                and togetherness.
+            </p>
+        </div>
+
+        <div class="story-card">
+            <div class="emoji">💍</div>
+            <h3>1 Year</h3>
+            <p>
+                One beautiful year
+                of marriage and
+                being husband and wife.
+            </p>
+        </div>
+
+        <div class="story-card">
+            <div class="emoji">🎂</div>
+            <h3>First Birthday</h3>
+            <p>
+                Your first birthday
+                after our marriage.
+                A very special one!
+            </p>
+        </div>
+
+        <div class="story-card">
+            <div class="emoji">🥺❤️</div>
+            <h3>Missing You</h3>
+            <p>
+                Miles apart today,
+                but forever close
+                in my heart.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>💌 A Letter From Your Husband</h2>
+
+    <p class="message">
+        Four years ago, our love story began.
+        One year ago, we became husband and wife.
+
+        <br><br>
+
+        And today, I wish I could turn back time
+        just to be beside you on your birthday.
+    </p>
+
+    <button onclick="openLetter()">
+        💝 Open My Love Letter
+    </button>
+
+    <div class="letter" id="letter">
+
+        <h2>To My Forever Love ❤️</h2>
+
+        My dearest Raheema,
+
+        <br><br>
+
+        Happy Birthday, my love! ❤️
+
+        <br><br>
+
+        Four years of loving you and one year
+        of being married to you. What a beautiful
+        journey we have shared!
+
+        <br><br>
+
+        This is your first birthday after our
+        marriage, and honestly, I wish I could
+        be right there with you.
+
+        I wish I could surprise you with a cake,
+        hold you close, kiss your forehead and
+        tell you how much you mean to me.
+
+        <br><br>
+
+        It makes me sad that I cannot celebrate
+        this special day beside you. But please
+        remember something: even if I'm not
+        physically there, my love is always with you.
+
+        <br><br>
+
+        You are my happiness, my peace,
+        my biggest blessing and my forever person.
+
+        <br><br>
+
+        I don't just want to celebrate this birthday.
+        I want to celebrate every birthday with you
+        for the rest of our lives.
+
+        <br><br>
+
+        May your life be filled with happiness,
+        good health, success and endless smiles.
+
+        <br><br>
+
+        I LOVE YOU MORE THAN WORDS CAN SAY.
+
+        <br><br>
+
+        Happy Birthday, my beautiful wife,
+        my Raheema! ❤️😘
+
+        <br><br>
+
+        <strong>Forever and always yours,</strong>
+        <br>
+        Your Loving Husband ❤️
+
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>One Last Surprise! 🎁</h2>
+
+    <p class="message">
+        I have one special wish for you...
+        <br>
+        May we never run out of love,
+        hugs, kisses and beautiful memories.
+    </p>
+
+    <button onclick="celebrate()">
+        🎊 Celebrate My Birthday!
+    </button>
+
+    <p class="footer">
+        Made with endless love ❤️
+        <br>
+        Especially for Raheema.
+        <br>
+        Your husband misses you! 🥺
+    </p>
+
+</div>
+
+<script>
+
+const colors = [
+    "#ffeb3b",
+    "#ff4081",
+    "#00e5ff",
+    "#ffffff",
+    "#76ff03",
+    "#ff9100",
+    "#d500f9"
+];
+
+// Create confetti
+
+function createConfetti() {
+
+    const confetti = document.createElement("div");
+
+    confetti.classList.add("confetti");
+
+    confetti.style.left = Math.random() * 100 + "vw";
+
+    confetti.style.backgroundColor =
+        colors[Math.floor(Math.random() * colors.length)];
+
+    confetti.style.animationDuration =
+        (Math.random() * 3 + 2) + "s";
+
+    confetti.style.borderRadius =
+        Math.random() > 0.5 ? "50%" : "2px";
+
+    document.body.appendChild(confetti);
+
+    setTimeout(() => {
+        confetti.remove();
+    }, 5000);
+}
+
+// Continuous confetti
+
+setInterval(createConfetti, 180);
+
+// Celebration button
+
+function celebrate() {
+
+    for (let i = 0; i < 150; i++) {
+
+        setTimeout(createConfetti, i * 10);
+
+    }
+
+}
+
+// Floating hearts
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.classList.add("heart");
+
+    heart.innerHTML = ["❤️","💕","💖","💗","💘"][
+        Math.floor(Math.random() * 5)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.animationDuration =
+        (Math.random() * 4 + 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 8000);
+
+}
+
+setInterval(createHeart, 700);
+
+// Open love letter
+
+function openLetter() {
+
+    const letter = document.getElementById("letter");
+
+    letter.classList.toggle("show");
+
+    if (letter.classList.contains("show")) {
+
+        letter.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+        celebrate();
+
+    }
+
+}
+
+// Initial birthday celebration
+
+window.addEventListener("load", () => {
+
+    celebrate();
+
+});
+
+</script>
+
+</body>
+</html>
